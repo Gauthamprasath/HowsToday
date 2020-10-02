@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HowsToday | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico|Satisfy|Shadows+Into+Light|Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body onload="NEWSAPP.getNewsData()">
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand orange-txt-header" href="#">
+        <img src="Images/icon.png" width="35px" height="30px" class="d-inline-block align-top">
+        HowsToday
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Today</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Yesterday</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tomorrow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">What's Hot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Poke</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Celebrities</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Country
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">India</a>
+                    <a class="dropdown-item" href="#">USA</a>
+                    <a class="dropdown-item" href="#">China</a>
+                    <a class="dropdown-item" href="#">Russia</a>
+                    <a class="dropdown-item" href="#">London</a>
+                    <a class="dropdown-item" href="#">Italy</a>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <button type="button" class="btn-orange">Sign In</button>
+        </div>
+    </div>
+</nav>
+<div class="shadow p-3 mb-5 rounded">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form class="form-inline">
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                       aria-label="Search">.
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-group" style="text-align: center">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Updates
+                            <span class="badge badge-primary badge-pill">14</span>
+                        </li>
+                        <li class="list-group-item">Must Read
+                            <span class="badge badge-primary badge-pill">8</span>
+                        </li>
+                        <li class="list-group-item">Your Tags
+                            <span class="badge badge-primary badge-pill">2</span>
+                        </li>
+                        <li class="list-group-item">Stats
+                            <span class="badge badge-primary badge-pill">135</span>
+                        </li>
+                        <li class="list-group-item">India</li>
+                        <li class="list-group-item">World</li>
+                        <li class="list-group-item">Cyber Security</li>
+                        <li class="list-group-item">Science</li>
+                        <li class="list-group-item">Economics</li>
+                        <li class="list-group-item">Business</li>
+                        <li class="list-group-item">Google</li>
+
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10 shadow p-3 mb-5 bg-white rounded">
+        <div class = row>
+            <div id="newsfeed" class="col"></div>
+            <div id="newsfeed" class="col-10"></div>
+            <div id="newsfeed" class="col"></div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
