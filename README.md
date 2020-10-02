@@ -1,2 +1,2 @@
 # HowsToday
- New Web App
+ News Web App
